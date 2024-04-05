@@ -1,1 +1,41 @@
 
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu Hambúrguer</title>
+<style>
+  .menu-hamburguer {
+    cursor: pointer;
+    display: block;
+  }
+
+  .opcoes {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .opcoes.visivel {
+    display: block;
+  }
+</style>
+</head>
+<body>
+
+<div class="menu-hamburguer">☰ Menu</div>
+<ul class="opcoes">
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+</ul>
+
+<script>
+  document.querySelector('.menu-hamburguer').addEventListener('click', function() {
+    document.querySelector('.opcoes').classList.toggle('visivel');
+  });
+</script>
+
+</body>
+</html>
