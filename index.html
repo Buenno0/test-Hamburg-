@@ -5,53 +5,53 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Menu Hambúrguer</title>
 <style>
-  /* Base styles for clean layout */
   body {
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f8f8f8;
   }
 
   .menu-hamburguer {
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    border-radius: 50%; /* Rounded corners for a soft touch */
-    background-color: #e0e0e0; /* Light gray background */
-    color: #333; /* Dark gray text for contrast */
-    transition: background-color 0.2s ease; /* Smooth hover effect */
+    display: block;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
   }
 
   .menu-hamburguer:hover {
-    background-color: #ddd; /* Slightly darker on hover */
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
   .opcoes {
     display: none;
     list-style-type: none;
     padding: 0;
-    margin: 0; /* Remove default margin for clean layout */
+    margin: 0;
   }
 
   .opcoes.visivel {
     display: block;
-    background-color: #fff; /* White background for options */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    position: absolute; /* Position the options list below the button */
-    top: calc(100% + 5px); /* Offset from button with a small gap */
-    left: 0;
-    width: 100%; /* Match the width of the menu button */
   }
 
   .opcoes li {
-    padding: 1rem;
-    transition: background-color 0.2s ease; /* Smooth hover effect */
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+    border-bottom: 1px solid #eee;
+  }
+
+  .opcoes li:last-child {
+    border-bottom: none;
   }
 
   .opcoes li:hover {
-    background-color: #f5f5f5; /* Light gray background on hover */
+    background-color: #f0f0f0;
   }
 </style>
 </head>
